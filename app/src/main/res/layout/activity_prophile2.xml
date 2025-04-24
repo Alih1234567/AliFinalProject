@@ -12,7 +12,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Refine"
+            android:text="Filter"
             android:textSize="20sp"
             android:textColor="#000000"
             android:layout_centerVertical="true"
@@ -66,6 +66,7 @@
                     android:textSize="16sp"
                     android:textColor="#000000"
                     android:checked="true"/>
+
                 <RadioButton
                     android:id="@+id/radio_new_items"
                     android:layout_width="match_parent"
@@ -120,15 +121,15 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_down_float" />
+                    android:src="@android:drawable/arrow_right" />
             </LinearLayout>
 
             <LinearLayout
-                android:id="@+id/brands_filter"
+                android:id="@+id/color_filter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:orientation="horizontal"
+                android:gravity="center_vertical"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp">
 
@@ -136,9 +137,32 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Brands"
-                    android:textColor="#000000"
-                    android:textSize="16sp" />
+                    android:text="Colors"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@android:drawable/arrow_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/size_filter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sizes"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -182,4 +206,5 @@
         android:background="#FF7043"
         android:layout_margin="16dp"
         android:textAllCaps="false"/>
+
 </LinearLayout>

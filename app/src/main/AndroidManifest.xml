@@ -13,6 +13,33 @@
         android:theme="@style/Theme.AliFinalProject"
         tools:targetApi="31">
         <activity
+            android:name=".ManageproductsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".WishlistActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ProductnameActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".RefineActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".decriptionActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".ProphileActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".SignInActivity1"
             android:exported="false" />
         <activity
@@ -24,15 +51,6 @@
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
-        <activity
-            android:name=".SignInActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
