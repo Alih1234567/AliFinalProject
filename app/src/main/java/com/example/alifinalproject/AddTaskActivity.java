@@ -29,13 +29,13 @@ public class AddTaskActivity extends AppCompatActivity
         etEmail = findViewById(R.id.etEmail);
         etPassword = findViewById(R.id.etPassword);
         btnSignUp = findViewById(R.id.btnSignIn);
-
-        private void checkEmailPassword()
+    }
+        private void checkEmailPassword ()
         {
             boolean isALLOK = true;
             String email = etEmail.getText().toString();
             String password = etPassword.getText().toString();
-            if (email.length() < 6 || email.contains("@")== false) {
+            if (email.length() < 6 || email.contains("@") == false) {
                 isALLOK = false;
                 etEmail.setError("Wrong Email");
             }
@@ -48,10 +48,10 @@ public class AddTaskActivity extends AppCompatActivity
 
             }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+                Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+                return insets;
+            });
+        }
     }
-}

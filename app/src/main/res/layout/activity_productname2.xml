@@ -54,7 +54,7 @@
                 android:layout_marginBottom="8dp"/>
 
             <EditText
-                android:id="@+id/product_name_input"
+                android:id="@+id/etProName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Enter product name"
@@ -73,16 +73,16 @@
                 android:layout_marginBottom="8dp"/>
 
             <EditText
-                android:id="@+id/description_input"
+                android:id="@+id/etDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter description"
-                android:textSize="18sp"
-                android:textColor="#000000"
-                android:background="#F0F0F0"
-                android:padding="12dp"
                 android:layout_marginBottom="16dp"
-                android:minLines="3"/>
+                android:background="#F0F0F0"
+                android:hint="Enter description"
+                android:minLines="3"
+                android:padding="12dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -99,7 +99,7 @@
                 android:gravity="center_vertical">
 
                 <EditText
-                    android:id="@+id/price_input"
+                    android:id="@+id/etPrice"
                     android:layout_width="0dp"
                     android:layout_weight="1"
                     android:layout_height="wrap_content"
@@ -111,10 +111,7 @@
                     android:padding="12dp"
                     android:layout_marginRight="8dp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@android:drawable/ic_dialog_dialer" />  </LinearLayout>
+                  </LinearLayout>
             <View
                 android:layout_width="match_parent"
                 android:layout_height="16dp"/>
@@ -182,7 +179,7 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/post_product_button"
+        android:id="@+id/btnPostPro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Post Product"

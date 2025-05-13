@@ -13,13 +13,19 @@
         android:theme="@style/Theme.AliFinalProject"
         tools:targetApi="31">
         <activity
+            android:name=".HistoryActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".AllProductsActivity"
+            android:exported="false" />
+        <activity
             android:name=".ManageproductsActivity2"
             android:exported="false" />
         <activity
             android:name=".WishlistActivity2"
             android:exported="false" />
         <activity
-            android:name=".ProductnameActivity2"
+            android:name=".ProductaddnameActivity2"
             android:exported="false" />
         <activity
             android:name=".RefineActivity2"

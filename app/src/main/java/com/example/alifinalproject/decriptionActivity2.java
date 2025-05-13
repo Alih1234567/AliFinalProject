@@ -13,8 +13,8 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class decriptionActivity2 extends AppCompatActivity {
 
-    private TextInputEditText etEmail, etPassword;
-    private Button btnSignUp;
+    private Button add_to_bag_button;
+    private Button buy_now_button;
 
 
     @Override
@@ -22,10 +22,12 @@ public class decriptionActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_decription2);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+        add_to_bag_button = findViewById(R.id.add_to_bag_button);
+        buy_now_button = findViewById(R.id.buy_now_button);
+//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+//            return insets;
+//        });
     }
 }
