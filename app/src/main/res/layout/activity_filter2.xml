@@ -151,10 +151,7 @@
                     android:textColor="#000000"
                     android:textSize="16sp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_right" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -174,10 +171,7 @@
                     android:textSize="16sp"
                     android:textColor="#000000"/>
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@android:drawable/arrow_right" />
+
             </LinearLayout>
 
         </LinearLayout>

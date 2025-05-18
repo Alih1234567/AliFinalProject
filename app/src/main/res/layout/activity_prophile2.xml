@@ -26,11 +26,7 @@
         android:hint="Phone Number"
         android:inputType="phone" />
 
-    <Spinner
-        android:id="@+id/membership_type"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:entries="@array/membership_types" />
+
 
     <EditText
         android:id="@+id/etdate_of_birth"
