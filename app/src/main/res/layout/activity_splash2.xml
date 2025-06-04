@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@mipmap/ic_launcher"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/chatgpt_image_jun_4__2025__09_22_28_am"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

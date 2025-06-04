@@ -1,6 +1,7 @@
 package com.example.alifinalproject;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -22,6 +23,22 @@ public class SplashActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_splash2);
 
         tvWelcome = findViewById(R.id.tvWelcome);
+        Thread thread = new Thread(){
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                finally {
+                    Intent intent = new Intent(SplashActivity2.this,AllProductsActivity.class);
+                    startActivity(intent);
+                    finish();
+                }
+            }
+        };
+        thread.start();
 
     }
 }
